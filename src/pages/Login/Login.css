@@ -1,10 +1,30 @@
+.login-container {
+  display: flex;
+  flex-basis: row;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-left {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+}
+
+/*login form*/
 .login-form {
-  max-width: 360px;
+  flex: 1;
+  height: 100%;
   margin: 60px auto;
   padding: 20px;
+  background: black;
+  color: white;
 }
 
 .login-form label {
+  max-width: 360px;
   display: block;
   margin: 30px auto;
 }
@@ -19,4 +39,18 @@
   font-size: 1em;
   color: #777;
   width: 100%;
+  border-radius: 12px;
+}
+
+.login-form .btn {
+  width: 180px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  height: 30px;
+  color: #1a8cd8;
+  background-color: black;
+}
+
+.login-form .btn:hover {
+  border: 1px solid white;
 }
