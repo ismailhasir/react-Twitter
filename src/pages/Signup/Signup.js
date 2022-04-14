@@ -1,15 +1,19 @@
 import "./Signup.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useSignup } from "../../hooks/useSignup";
 
 export default function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
+  const [userName, setUserName] = useState("");
+  const { signup, error, isPending } = useSignup();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email, password, name);
+    signup(email, password, userName);
+    navigate("/login");
   };
 
   return (
@@ -44,8 +48,8 @@ export default function Signup() {
           <input
             type="text"
             required
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
             placeholder="User Name"
           />
         </label>
