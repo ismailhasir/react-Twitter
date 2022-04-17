@@ -1,13 +1,16 @@
+//styles
 import "./Home.css";
-
-import React from "react";
+//components
+import SideBar from "../../components/SideBar/SideBar";
+import Main from "../../components/Main/Main";
+import TimeLine from "../../components/TimeLine/TimeLine";
 
 export default function Home() {
   return (
-    <div className="home-wrap">
-      <div className="home-left">Home Page Left</div>
-      <div className="home-mid">Home Page Middle</div>
-      <div className="home-right">Home Page Right</div>
+    <div className="home-container">
+      <SideBar />
+      <Main />
+      <TimeLine />
     </div>
   );
 }

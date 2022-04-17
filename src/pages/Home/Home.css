@@ -1,17 +1,7 @@
-.home-wrap {
-  display: flex;
+.home-container {
   height: 100vh;
-}
-
-.home-left {
-  background-color: green;
-  flex: 1;
-}
-.home-mid {
-  background-color: red;
-  flex: 1;
-}
-.home-right {
-  background-color: blue;
-  flex: 1;
+  max-width: 1265px;
+  /* background-color: black; */
+  margin: auto auto;
+  display: flex;
 }
