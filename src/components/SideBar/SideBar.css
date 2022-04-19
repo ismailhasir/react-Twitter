@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid gray;
+  border-right: 1px solid gray;
 }
 
 .sidebar-top {
@@ -22,7 +22,7 @@
   color: black;
   font-weight: bold;
   font-size: 22px;
-  /* padding-bottom: 15px; */
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
   /* border: 1px solid green; */
@@ -31,8 +31,26 @@
 .sidebar-item:hover {
   background-color: #f2f2f2;
   border-radius: 15px;
+  color: #1d9bf0;
 }
 
 .icon {
   color: white;
+}
+
+.btn {
+  width: 210.59px;
+  height: 52px;
+  background-color: #1d9bf0;
+  font-size: 17px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 9999px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+}
+
+.sidebar-item:active {
+  color: #1d9bf0;
 }

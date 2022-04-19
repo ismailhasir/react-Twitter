@@ -50,6 +50,7 @@ export default function SideBar() {
           <MoreIcon />
           Daha Fazla
         </Link>
+        <button className="btn">Tweetle</button>
       </div>
       <div className="sidebar-bottom">Profile Section</div>
     </div>
